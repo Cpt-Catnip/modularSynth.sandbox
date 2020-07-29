@@ -7,9 +7,11 @@ const App = () => {
   return (
     <div>
       <Nav />
-      <Switch>
-        <Route path="/simple-oscillator" component={SimpleOscillator} />
-      </Switch>
+      <main>
+        <Switch>
+          <Route path="/simple-oscillator" component={SimpleOscillator} />
+        </Switch>
+      </main>
     </div>
   );
 };

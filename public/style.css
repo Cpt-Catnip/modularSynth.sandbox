@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 10px;
+  width: 100vw;
+}
+
+img {
+  width: 40%;
+  height: auto;
+}
