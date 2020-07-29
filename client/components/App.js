@@ -1,12 +1,15 @@
 import React from 'react';
 import SimpleOscillator from './SimpleOscillator';
-// import PlayButton from './PlayButton';
+import Nav from './Nav';
+import { Switch, Route } from 'react-router-dom';
 
 const App = () => {
   return (
     <div>
-      <h1>Tone?</h1>
-      <SimpleOscillator />
+      <Nav />
+      <Switch>
+        <Route path="/simple-oscillator" component={SimpleOscillator} />
+      </Switch>
     </div>
   );
 };
