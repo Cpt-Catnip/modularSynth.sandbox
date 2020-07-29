@@ -5,6 +5,7 @@ const Nav = () => {
   return (
     <nav>
       <NavLink to="/simple-oscillator">Simple Oscillator</NavLink>
+      <NavLink to="/fm-signal">FM Oscillator</NavLink>
     </nav>
   )
 }
