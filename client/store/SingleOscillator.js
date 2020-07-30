@@ -41,7 +41,7 @@ export default (state = initialState, action) => {
       };
 
     case UPDATE_PARAM:
-      state.osc[action.param].value = action.value || 0;
+      state.osc[action.param].value = action.value >= 0 ? action.value : 0;
       return {
         ...state,
         osc: state.osc,

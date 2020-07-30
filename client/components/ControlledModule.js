@@ -17,6 +17,7 @@ class ControlledModule extends React.Component {
     return (
       <div>
         <h1>Controlled Module</h1>
+        <h3>Frequency Modulated Oscillator</h3>
         <FmForm {...this.props} handleChange={this.handleChange} />
         <button type="button" onClick={this.props.play}>
           Play

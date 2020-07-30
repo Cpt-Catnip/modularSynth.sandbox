@@ -9,6 +9,7 @@ const FmForm = (props) => {
         name="frequency"
         type="number"
         value={frequency}
+        step="10"
         onChange={handleChange}
       />
     </form>
