@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import reducer from './SingleOscillator';
+import reducer from './singleOscillator';
 import { createLogger } from 'redux-logger';
 
 let middleware = [createLogger({ collapsed: true })];
