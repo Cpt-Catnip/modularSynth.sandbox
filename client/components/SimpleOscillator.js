@@ -18,7 +18,9 @@ const SimpleOscillator = () => {
   return (
     <div>
       <h1>A Simple Oscillator</h1>
-      <img src="/images/simple_oscillator.png" />
+      <div>
+        <img src="/images/simple_oscillator.png" />
+      </div>
       <button type="button" onClick={start}>
         Play
       </button>

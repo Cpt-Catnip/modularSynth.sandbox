@@ -24,7 +24,9 @@ const FMOscillation = () => {
   return (
     <div>
       <h1>Frequency Modulation</h1>
-      <img src="images/fm_signal.png" />
+      <div>
+        <img src="images/fm_signal.png" />
+      </div>
       <button type="button" onClick={start}>
         Play
       </button>
