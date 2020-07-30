@@ -3,6 +3,7 @@ import SimpleOscillator from './SimpleOscillator';
 import Nav from './Nav';
 import { Switch, Route } from 'react-router-dom';
 import FMOscillation from './FMOscillation'
+import ControlledModule from './ControlledModule';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Switch>
           <Route path="/simple-oscillator" component={SimpleOscillator} />
           <Route path="/fm-signal" component={FMOscillation} />
+          <Route path="/controlled-module" component={ControlledModule} />
         </Switch>
       </main>
     </div>

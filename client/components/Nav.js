@@ -7,6 +7,8 @@ const Nav = () => {
       <NavLink to="/simple-oscillator">Simple Oscillator</NavLink>
       <span> </span>
       <NavLink to="/fm-signal">FM Oscillator</NavLink>
+      <span> </span>
+      <NavLink to="/controlled-module">Controlled Module</NavLink>
     </nav>
   )
 }
