@@ -39,6 +39,14 @@ export default (state = initialState, action) => {
         ...state,
         isPlaying: !state.isPlaying,
       };
+
+    case UPDATE_PARAM:
+      state.osc[action.param].value = action.value || 0;
+      return {
+        ...state,
+        osc: state.osc,
+      };
+
     default:
       return state;
   }

@@ -1,27 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import FmForm from './FmForm';
-import { toggleAudio } from '../store/singleOscillator';
+import { toggleAudio, updateParam } from '../store/singleOscillator';
 
 class ControlledModule extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      foo: false,
-    };
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange() {
-    console.log('Re-rendering?')
-    this.setState((state) => ({ foo: !state.foo }));
+  handleChange(event) {
+    this.props.update(event.target.name, event.target.value);
   }
 
   render() {
     return (
       <div>
         <h1>Controlled Module</h1>
-        <FmForm handleChange={this.handleChange} />
+        <FmForm {...this.props} handleChange={this.handleChange} />
         <button type="button" onClick={this.props.play}>
           Play
         </button>
@@ -30,8 +26,13 @@ class ControlledModule extends React.Component {
   }
 }
 
+const mapState = (state) => ({
+  frequency: state.osc.frequency.value,
+})
+
 const mapDispatch = (dispatch) => ({
   play: () => dispatch(toggleAudio()),
+  update: (param, value) => dispatch(updateParam(param, value)),
 });
 
-export default connect(null, mapDispatch)(ControlledModule);
+export default connect(mapState, mapDispatch)(ControlledModule);
