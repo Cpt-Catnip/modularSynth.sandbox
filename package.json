@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Cpt-Catnip/modularSynth.sandbox#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "morgan": "^1.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
